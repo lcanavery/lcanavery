@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 98vh;
+            font-size: 3rem;
+            font-family: sans-serif;
+        }
+        
+        .text {
+            color: #bcbcbc;
+            animation: updown 3s infinite alternate-reverse;
+        }
+        
+        .shadow {
+            background: #93939361;
+            height: 30px;
+            width: 50%;
+            filter: blur(26px);
+            border-radius: 110%;
+            margin: 0 auto;
+            animation: shadow 3s infinite alternate-reverse;
+        }
+        
+        @keyframes updown {
+            0% {
+                margin-top: -20px;
+            }
+            100% {
+                margin-top: 20px;
+            }
+        }
+        
+        @keyframes shadow {
+            0% {
+                opacity: 0.5;
+                filter: blur(26px);
+            }
+            100% {
+                opacity: 1;
+                filter: blur(16px);
+            }
+        }
+    </style>
+
+    <div class="text">Ups... no tengo mucho para mostrar</div>
+    <div class="shadow"></div>
+</body>
+
+</html>
